@@ -1,34 +1,36 @@
+import { Link } from "react-router-dom";
+
 const Header = () => {
-    return(
-        <nav  className=" nim-menu navbar navbar-default navbar-fixed-top">
-        <div className="container">
-  
+  return (
+    <nav className=" nim-menu navbar navbar-default navbar-fixed-top">
+      <div className="container">
+
         <div className="navbar-header">
-        <button type ="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span className="sr-only">Toggle navigation</span>
-        <span className="icon-bar"></span>
-        <span className="icon-bar"></span>
-        <span className="icon-bar"></span>
-        </button>
-        <a className="navbar-brand" href="index.html">N<span className="themecolor">i</span>M</a>
+          <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span className="sr-only">Toggle navigation</span>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
+          </button>
+          <Link className="navbar-brand" to="/">N<span className="themecolor">i</span>M</Link>
         </div>
-  
+
         <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul className="nav navbar-nav navbar-right">
-        <li><a href="#home" className="page-scroll">Home</a></li>
-        <li><a href="#one" className="page-scroll">About</a></li>
-        <li><a href="#two" className="page-scroll">Our Works</a></li>
-        <li><a href="#three" className="page-scroll">Team</a></li>
-        <li><a href="#four" className="page-scroll">Inspiration</a></li>
-        <li><a href="#five" className="page-scroll">Status</a></li>
-        <li><a href="#six" className="page-scroll">Testimonials</a></li>
-        <li><a href="#seven" className="page-scroll">Services</a></li>
-        <li><a href="#eight" className="page-scroll">Contact</a></li>
-        </ul>
+          <ul className="nav navbar-nav navbar-right">
+            <li><Link to="/" className="button">Home</Link></li>
+            <li><Link to="/about" className="button">About</Link></li>
+            <li><Link to="/work" className="button">Our Works</Link></li>
+            <li><Link to="/team" className="button">Team</Link></li>
+            <li><Link to="/inspiration" className="button">Inspiration</Link></li>
+            <li><Link to="/stats" className="button">Status</Link></li>
+            <li><Link to="/testimonials" className="button">Testimonials</Link></li>
+            <li><Link to="/services" className="button">Services</Link></li>
+            <li><Link to="/contact" className="button">Contact</Link></li>
+          </ul>
         </div>
-        </div>
-      </nav>
-    );
+      </div>
+    </nav>
+  );
 };
 
 export default Header;

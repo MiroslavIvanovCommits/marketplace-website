@@ -1,4 +1,4 @@
-const ReceantWork = () => {
+const Work = () => {
     return(
         <section className="recent-works text-center" id="two">
         <div className="container">
@@ -69,4 +69,4 @@ const ReceantWork = () => {
     );
 };
 
-export default ReceantWork;
+export default Work;
