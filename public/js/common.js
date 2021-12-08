@@ -22,7 +22,6 @@ VERSION : 1.1
               App.owlTestimonial();
               App.stats();
               App.menuAnimation();
-              App.navigate();
               App.contactsubmit();
               App.imagepopup();
              	
@@ -148,4 +147,4 @@ VERSION : 1.1
         { src: "images/bak4.jpg" }
     ],animation: 'kenburns'
 });
-};
+  }
