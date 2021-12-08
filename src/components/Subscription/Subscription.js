@@ -15,7 +15,7 @@ const Subscription = () => {
                   <span className="input-group-btn">
                     <button type="submit" className="btn btn-default">SUBSCRIBE <i className="fa fa-envelope"></i> </button>
                   </span> </div>
-                <label for="mc-email" id="mc-notification"></label>
+                <label htmlFor="mc-email" id="mc-notification"></label>
               </form>
             </div>
           </div>
