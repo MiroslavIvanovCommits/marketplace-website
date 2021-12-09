@@ -12,6 +12,9 @@ import Work from "./components/Work/Work.js";
 import About from "./components/About/About.js";
 import Dashboard from "./components/Dashboard/Dashboard.js";
 import Preloader from "./components/Preloader/Preloader.js";
+import Login from "./components/Login/Login.js";
+import Register from "./components/Register/Register.js";
+import Logout from "./components/Logout/Logout.js";
 
 function App() {
   return (
@@ -24,6 +27,9 @@ function App() {
       <main className="wrapper">
         <Routes>
         <Route path="/" element={<Dashboard />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/logout" element={<Logout />} />
         </Routes>
 
         <About />
