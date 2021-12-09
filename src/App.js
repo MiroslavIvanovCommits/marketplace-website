@@ -4,7 +4,6 @@ import Header from "./components/Header/Header.js";
 import Footer from "./components/Footer/Footer.js";
 import Subscription from "./components/Subscription/Subscription.js";
 import Services from "./components/Services/Services.js";
-import Testimonials from "./components/Testimonials/Testimonials.js";
 import Stats from "./components/Stats/Stats.js";
 import Inspiration from "./components/Inspiration/Inspiration.js";
 import Team from "./components/Team/Team.js";
@@ -41,8 +40,6 @@ function App() {
         <Inspiration />
 
         <Stats />
-
-        <Testimonials />
 
         <Services />
 
