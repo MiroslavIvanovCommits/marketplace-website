@@ -147,4 +147,4 @@ VERSION : 1.1
         { src: "images/bak4.jpg" }
     ],animation: 'kenburns'
 });
-  }
+  };
