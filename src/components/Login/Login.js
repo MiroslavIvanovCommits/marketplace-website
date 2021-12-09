@@ -1,10 +1,11 @@
-import { useNavigate } from "react-router-dom";
-
 import * as authService from "../../services/authService.js";
+import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "../../contexts/AuthContext.js";
 
 const Login = () => {
+    const { login } = useContext(AuthContext);
     const navigate = useNavigate();
-
     const onLoginHandler = (e) => {
         e.preventDefault();
 
@@ -12,12 +13,18 @@ const Login = () => {
         let email = formData.get("email");
         let password = formData.get("password");
 
-        authService.login(email);
+        authService.login(email, password)
+        .then((authData) => {
+            login(authData);
+            
+            navigate("/");
+        })
+        .catch(err => {
+            console.log(err);
+        });
 
-        navigate("/");
     };
-
-    return(
+    return (
         <section id="login-page" className="login">
             <form id="login-form" onSubmit={onLoginHandler} method="POST">
                 <fieldset>
@@ -38,7 +45,7 @@ const Login = () => {
                 </fieldset>
             </form>
         </section>
-    );
-};
+    )
+}
 
-export default Login;
+export default Login
