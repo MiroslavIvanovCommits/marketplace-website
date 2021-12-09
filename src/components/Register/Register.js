@@ -1,7 +1,25 @@
+import * as authService from "../../services/authService.js";
+import { AuthContext } from "../../contexts/AuthContext.js";
+import { useContext } from "react";
+import { useNavigate } from "react-router";
+
 const Register = () => {
-    return(
+    const navigate = useNavigate();
+    const { login } = useContext(AuthContext);
+
+    const registerSubmintHandler = (e) => {
+        e.preventDefault();
+        let { email, password } = Object.fromEntries(new FormData(e.currentTarget));
+        authService.register(email, password)
+            .then(authData => {
+                login(authData);
+                navigate("/");
+            });
+    };
+
+    return (
         <section id="register-page" className="register">
-            <form id="register-form" method="POST" >
+            <form id="register-form" action="" method="POST" onSubmit={registerSubmintHandler}>
                 <fieldset>
                     <legend>Register Form</legend>
                     <p className="field">
@@ -26,7 +44,7 @@ const Register = () => {
                 </fieldset>
             </form>
         </section>
-    );
-};
+    )
+}
 
-export default Register;
+export default Register
