@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header/Header.js";
 import Footer from "./components/Footer/Footer.js";
-import Subscription from "./components/Subscription/Subscription.js";
+import Newsletter from "./components/Newsletter/Newsletter.js";
 import Services from "./components/Services/Services.js";
 import Stats from "./components/Stats/Stats.js";
 import Inspiration from "./components/Inspiration/Inspiration.js";
@@ -29,21 +29,14 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/logout" element={<Logout />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/work" element={<Work />} />
+        {/* <Route path="/team" element={<Team />} />
+        <Route path="/inspiration" element={<Inspiration />} /> */}
+        <Route path="/stats" element={<Stats />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/newsletter" element={<Newsletter />} />
         </Routes>
-
-        <About />
-
-        <Work />
-
-        <Team />
-
-        <Inspiration />
-
-        <Stats />
-
-        <Services />
-
-        <Subscription />
 
         <Footer />
 

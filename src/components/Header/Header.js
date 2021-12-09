@@ -20,11 +20,11 @@ const Header = () => {
             <li><Link to="/" className="button">Home</Link></li>
             <li><Link to="/about" className="button">About</Link></li>
             <li><Link to="/work" className="button">Our Works</Link></li>
-            <li><Link to="/team" className="button">Team</Link></li>
-            <li><Link to="/inspiration" className="button">Inspiration</Link></li>
+            {/* <li><Link to="/team" className="button">Team</Link></li>
+            <li><Link to="/inspiration" className="button">Inspiration</Link></li> */}
             <li><Link to="/stats" className="button">Status</Link></li>
             <li><Link to="/services" className="button">Services</Link></li>
-            <li><Link to="/contact" className="button">Contact</Link></li>
+            <li><Link to="/newsletter" className="button">Newsletter</Link></li>
             <li><Link to="/login" className="button">Login</Link></li>
             <li><Link to="/register" className="button">Register</Link></li>
             <li><Link to="/logout" className="button">Logout</Link></li>

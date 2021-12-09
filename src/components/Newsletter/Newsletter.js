@@ -1,4 +1,4 @@
-const Subscription = () => {
+const Newsletter = () => {
     return(
         <section className="sub-form text-center" id="eight">
         <div className="container">
@@ -24,4 +24,4 @@ const Subscription = () => {
     );
 };
 
-export default Subscription;
+export default Newsletter;
