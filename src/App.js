@@ -13,7 +13,6 @@ import Preloader from "./components/Preloader/Preloader.js";
 import Login from "./components/Login/Login.js";
 import Register from "./components/Register/Register.js";
 import Logout from "./components/Logout/Logout.js";
-// import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
