@@ -1,7 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { AuthContext } from "./contexts/AuthContext.js";
-import useLocalStorage from "./hooks/useLocalStorage.js";
-
+import { AuthProvider } from "./contexts/AuthContext.js";
 
 import Header from "./components/Header/Header.js";
 import Footer from "./components/Footer/Footer.js";
@@ -16,25 +14,11 @@ import Login from "./components/Login/Login.js";
 import Register from "./components/Register/Register.js";
 import Logout from "./components/Logout/Logout.js";
 
-const initialAuthState = {
-  accessToken: "",
-  emal: "",
-  _id: ""
-};
 
 function App() {
-  const [user, setUser] = useLocalStorage("user", initialAuthState);
-
-  const login = (authData) => {
-    setUser(authData);
-  };
-
-  const logout = () => {
-    setUser(initialAuthState);
-  };
 
   return (
-    <AuthContext.Provider value={{ user, login, logout }}>
+    <AuthProvider>
     <div>
 
       <Preloader />
@@ -58,7 +42,7 @@ function App() {
 
       </main>
     </div>
-    </AuthContext.Provider>
+    </AuthProvider>
   );
 }
 
