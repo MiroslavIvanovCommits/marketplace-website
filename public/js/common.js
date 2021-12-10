@@ -23,7 +23,6 @@ VERSION : 1.1
               App.stats();
               App.menuAnimation();
               App.contactsubmit();
-              App.imagepopup();
              	
             },
         loader:function()
@@ -87,11 +86,6 @@ VERSION : 1.1
        }
        )
    },
-    
-    imagepopup:function()
-    {
-        $('.show-image').magnificPopup({type: 'image'});
-    },
    
    contactsubmit:function()
    {
