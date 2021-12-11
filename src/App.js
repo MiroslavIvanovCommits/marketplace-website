@@ -14,6 +14,8 @@ import Login from "./components/Login/Login.js";
 import Register from "./components/Register/Register.js";
 import Logout from "./components/Logout/Logout.js";
 import Create from "./components/Create/Create.js";
+import DealCatalog from "./components/DealCatalog/DealCatalog.js";
+import Details from "./components/Details/Details.js";
 
 
 function App() {
@@ -28,6 +30,8 @@ function App() {
 
       <main className="wrapper">
         <Routes>
+        <Route path="/catalog" element={<DealCatalog />} />
+        <Route path="/details/:petId" element={<Details />} />
         <Route path="/" element={<Dashboard />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
