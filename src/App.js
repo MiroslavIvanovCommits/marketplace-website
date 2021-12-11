@@ -31,7 +31,7 @@ function App() {
       <main className="wrapper">
         <Routes>
         <Route path="/catalog" element={<DealCatalog />} />
-        <Route path="/details/:petId" element={<Details />} />
+        <Route path="/details/:dealId" element={<Details />} />
         <Route path="/" element={<Dashboard />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
