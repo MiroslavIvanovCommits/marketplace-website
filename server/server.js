@@ -1366,7 +1366,17 @@
 			'_createdOn': 1617799822338
 		}
 	},
-	likes: {}
+	likes: {},
+    deals: {
+        '25449aed-2a00-469a-9cca-f12952c20b83': {
+			'_ownerId': '35c62d76-8152-4626-8712-eeb96381bea8',
+			'name': 'T-Shirt',
+			'description': 'Stupid garment for poor people.',
+			'imageUrl': 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.bewakoof.com%2Foriginal%2Flogo-batman-glow-in-dark-half-sleeve-t-shirt-bml--men-s-printed-t-shirts-232960-1587185206.gif&f=1&nofb=1',
+			'type': 'clothing',
+			'_createdOn': 1617797078108
+		},
+    }
     };
     var rules$1 = {
     	users: {
