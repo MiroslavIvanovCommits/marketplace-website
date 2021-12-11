@@ -11,7 +11,10 @@ const Header = () => {
     </>
   );
   let userNavigation = (
+    <>
       <li><Link to="/logout" className="button">Logout</Link></li>
+      <li><Link to="/create" className="button">Create</Link></li>
+    </>
   );
 
   return (

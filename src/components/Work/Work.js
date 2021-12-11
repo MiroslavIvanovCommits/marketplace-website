@@ -12,6 +12,7 @@ const Work = () => {
         <div className="gap"></div>
 
         <div className="row">
+
           <div className="col-sm-4 port-item margin-bottom">
             <a href="#">
               <div className="item-img-wrap">
@@ -28,10 +29,11 @@ const Work = () => {
               <div className="item-img-wrap">
                 <img src="images/work-2.jpg" className="img-responsive" alt="workimg" />
               </div>
-              <div className="work-desc">
-                <h3><a href="#">Graphic Design</a></h3>
-              </div>
             </a>
+            <div className="work-desc">
+              <h3><a href="#">Graphic Design</a></h3>
+            </div>
+
           </div>
 
           <div className="col-sm-4 port-item margin-bottom">
@@ -39,11 +41,12 @@ const Work = () => {
               <div className="item-img-wrap">
                 <img src="images/work-3.jpg" className="img-responsive" alt="workimg" />
               </div>
-              <div className="work-desc">
-                <h3><a href="#">Web Design</a></h3>
-              </div>
             </a>
+            <div className="work-desc">
+              <h3><a href="#">Web Design</a></h3>
+            </div>
           </div>
+          
         </div>
 
         <div className="row">

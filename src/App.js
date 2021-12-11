@@ -13,6 +13,7 @@ import Preloader from "./components/Preloader/Preloader.js";
 import Login from "./components/Login/Login.js";
 import Register from "./components/Register/Register.js";
 import Logout from "./components/Logout/Logout.js";
+import Create from "./components/Create/Create.js";
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
         <Route path="/stats" element={<Stats />} />
         <Route path="/services" element={<Services />} />
         <Route path="/newsletter" element={<Newsletter />} />
+        <Route path="/create" element={<Create />} />
         </Routes>
 
         <Footer />
