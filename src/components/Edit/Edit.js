@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import * as dealService from '../../services/dealService.js';
 import useDealState from '../../hooks/useDealState';
 
@@ -13,12 +13,16 @@ const Edit = () => {
     const { dealId } = useParams();
     const [errors, setErrors] = useState({name: false});
     const [deal, setDeal] = useDealState(dealId);
+    const navigate = useNavigate();
 
     const dealEditSubmitHandler = (e) => {
         e.preventDefault();
 
-        // TODO: edit form
-        console.log('Submit');
+        let dealData = Object.fromEntries(new FormData(e.currentTarget));
+
+        dealService.update(deal._id, dealData);
+
+        navigate("/catalog");
     };
 
     const nameChangeHandler = (e) => {
