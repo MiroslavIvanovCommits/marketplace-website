@@ -11,7 +11,7 @@ const types = [
 
 const Edit = () => {
     const { dealId } = useParams();
-    const [errors, setErrors] = useState({name: false});
+    const [errors, setErrors] = useState({ name: false });
     const [deal, setDeal] = useDealState(dealId);
     const navigate = useNavigate();
 
@@ -20,9 +20,8 @@ const Edit = () => {
 
         let dealData = Object.fromEntries(new FormData(e.currentTarget));
 
-        dealService.update(deal._id, dealData);
-
-        navigate("/catalog");
+        dealService.update(deal._id, dealData)
+            .then(navigate("/catalog"));
     };
 
     const nameChangeHandler = (e) => {
@@ -43,7 +42,7 @@ const Edit = () => {
                     <legend>Edit my Deal</legend>
                     <p className="field">
                         <label htmlFor="name">Name</label>
-                        <span className="input" style={{borderColor: errors.name ? 'red' : 'inherit'}}>
+                        <span className="input" style={{ borderColor: errors.name ? 'red' : 'inherit' }}>
                             <input type="text" name="name" id="name" defaultValue={deal.name} onChange={nameChangeHandler} />
                         </span>
                     </p>
@@ -62,7 +61,7 @@ const Edit = () => {
                     <p className="field">
                         <label htmlFor="type">Type</label>
                         <span className="input">
-                            <select id="type" name="type" value={deal.type} onChange={(e) => setDeal(s => ({...s, type: e.target.value}))}>
+                            <select id="type" name="type" value={deal.type} onChange={(e) => setDeal(s => ({ ...s, type: e.target.value }))}>
                                 {types.map(x => <option key={x.value} value={x.value}>{x.text}</option>)}
                             </select>
                         </span>
