@@ -16,6 +16,7 @@ import Logout from "./components/Logout/Logout.js";
 import Create from "./components/Create/Create.js";
 import DealCatalog from "./components/DealCatalog/DealCatalog.js";
 import Details from "./components/Details/Details.js";
+import Edit from "./components/Edit/Edit.js";
 
 
 function App() {
@@ -32,12 +33,13 @@ function App() {
         <Routes>
         <Route path="/catalog" element={<DealCatalog />} />
         <Route path="/details/:dealId" element={<Details />} />
+        <Route path="/edit/:dealId" element={<Edit />} />
         <Route path="/" element={<Dashboard />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/logout" element={<Logout />} />
         <Route path="/about" element={<About />} />
-        <Route path="/work" element={<Work />} />
+        {/* <Route path="/work" element={<Work />} /> */}
         <Route path="/stats" element={<Stats />} />
         <Route path="/services" element={<Services />} />
         <Route path="/newsletter" element={<Newsletter />} />

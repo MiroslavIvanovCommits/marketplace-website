@@ -26,7 +26,7 @@ const Details = () => {
 
     const ownerButtons = (
         <>
-            <Link className="button" to="edit">Edit</Link>
+            <Link className="button" to={`/edit/${deal._id}`}>Edit</Link>
             <a className="button" href="#" onClick={deleteHandler}>Delete</a>
         </>
     );

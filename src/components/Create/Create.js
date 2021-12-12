@@ -23,7 +23,7 @@ const Create = () => {
             type
         }, user.accessToken)
             .then(result => {
-                navigate("/");
+                navigate("/catalog");
             });
     };
     return (
