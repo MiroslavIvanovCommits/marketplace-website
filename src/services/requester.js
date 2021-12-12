@@ -25,7 +25,7 @@ async function responseHandler(res) {
     } else {
         throw jsonData;
     }
-};
+}
 
 function getToken() {
     try {
