@@ -6,7 +6,6 @@ import Footer from "./components/Footer/Footer.js";
 import Newsletter from "./components/Newsletter/Newsletter.js";
 import Services from "./components/Services/Services.js";
 import Stats from "./components/Stats/Stats.js";
-import Work from "./components/Work/Work.js";
 import About from "./components/About/About.js";
 import Dashboard from "./components/Dashboard/Dashboard.js";
 import Preloader from "./components/Preloader/Preloader.js";
@@ -39,7 +38,6 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/logout" element={<Logout />} />
         <Route path="/about" element={<About />} />
-        {/* <Route path="/work" element={<Work />} /> */}
         <Route path="/stats" element={<Stats />} />
         <Route path="/services" element={<Services />} />
         <Route path="/newsletter" element={<Newsletter />} />
