@@ -5,9 +5,9 @@ const Footer = () => {
         <div className="container">
         <div className="row">
         <div className="col-md-4">
-        <p className="footer-links"><a href="#">Terms of Use</a> <a href="#">Privacy Policy</a></p>
+        <p className="footer-links"><a>Made with ❤️ for SoftUni ReactJS course.</a></p>
         </div>
-        <div className="col-md-4"> <small>&copy; 2015 Nim.All rights reserved.</small></div>
+        <div className="col-md-4"> <small>&copy; 2021 Created by Miroslav Ivanov</small></div>
         <div className="col-md-4">
   
         <ul className="social">
