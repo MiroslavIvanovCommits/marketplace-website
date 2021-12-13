@@ -16,38 +16,39 @@ import Create from "./components/Create/Create.js";
 import DealCatalog from "./components/DealCatalog/DealCatalog.js";
 import Details from "./components/Details/Details.js";
 import Edit from "./components/Edit/Edit.js";
+import { UserRouteGuard, GuestRouteGuard } from "./components/Common/RouteGuard.js";
 
 
 function App() {
 
   return (
     <AuthProvider>
-    <div>
+      <div>
 
-      <Preloader />
+        <Preloader />
 
-      <Header />
+        <Header />
 
-      <main className="wrapper">
-        <Routes>
-        <Route path="/catalog" element={<DealCatalog />} />
-        <Route path="/details/:dealId" element={<Details />} />
-        <Route path="/edit/:dealId" element={<Edit />} />
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/logout" element={<Logout />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/stats" element={<Stats />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/newsletter" element={<Newsletter />} />
-        <Route path="/create" element={<Create />} />
-        </Routes>
+        <main className="wrapper">
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/stats" element={<Stats />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/newsletter" element={<Newsletter />} />
+            <Route path="/login" element={<GuestRouteGuard><Login /></GuestRouteGuard>} />
+            <Route path="/register" element={<GuestRouteGuard><Register /></GuestRouteGuard>} />
+            <Route path="/logout" element={<Logout />} />
+            <Route path="/catalog" element={<DealCatalog />} />
+            <Route path="/details/:dealId" element={<Details />} />
+            <Route path="/create" element={<UserRouteGuard><Create /></UserRouteGuard>} />
+            <Route path="/edit/:dealId" element={<UserRouteGuard><Edit /></UserRouteGuard>} />
+          </Routes>
 
-        <Footer />
+          <Footer />
 
-      </main>
-    </div>
+        </main>
+      </div>
     </AuthProvider>
   );
 }
