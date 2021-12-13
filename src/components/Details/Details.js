@@ -1,20 +1,23 @@
+import { useEffect } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
+
 import * as dealService from "../../services/dealService.js";
-import { useState, useEffect, useContext } from "react";
-import { AuthContext } from "../../contexts/AuthContext.js";
+import * as likeService from '../../services/likeService.js';
+import { useAuthContext } from '../../contexts/AuthContext';
+import useDealState from '../../hooks/useDealState.js';
 
 const Details = () => {
     const navigate = useNavigate();
-    const { user } = useContext(AuthContext);
-    const [deal, setDeal] = useState({});
+    const { user } = useAuthContext();
     const { dealId } = useParams();
+    const [deal, setDeal] = useDealState(dealId);
 
     useEffect(() => {
-        dealService.getOne(dealId)
-            .then(dealResult => {
-                setDeal(dealResult);
+        likeService.getDealLikes(dealId)
+            .then(likes => {
+                setDeal(state => ({ ...state, likes }));
             });
-    }, [dealId]);
+    }, []);
 
     const deleteHandler = (e) => {
         e.preventDefault();
@@ -31,7 +34,26 @@ const Details = () => {
         </>
     );
 
-    const userButtons = <a className="button" href="#">Like</a>;
+    const likeButtonClick = () => {
+        if (user._id === deal._ownerId) {
+            return;
+        }
+
+        if (deal.likes.includes(user._id)) {
+            return;
+        }
+
+        likeService.like(user._id, dealId)
+            .then(() => {
+                setDeal(state => ({ ...state, likes: [...state.likes, user._id] }));
+            });
+    };
+
+    const userButtons = <a className="button" type="button" onClick={likeButtonClick} disabled={deal.likes?.includes(user._id)}>
+        {deal.likes?.includes(user._id)
+            ? "Liked"
+            : "Like"}
+    </a>;
 
     return (
         <section id="details-page" className="details">
@@ -40,14 +62,14 @@ const Details = () => {
                 <p className="type">Type: {deal.type}</p>
                 <p className="img"><img src={deal.imageUrl} /></p>
                 <div className="actions">
-                    {user._id && (user._id === deal._ownerId
+                    {user._id && (user._id === deal._ownerId)
                         ? ownerButtons
                         : userButtons
-                    )}
+                    }
 
                     <div className="likes">
                         <img className="hearts" src="/images/heart.png" />
-                        <span id="total-likes">Likes: {deal.likes?.length}</span>
+                        <span id="total-likes">Likes: {deal.likes?.length || 0}</span>
                     </div>
                 </div>
             </div>
