@@ -2483,6 +2483,14 @@ fieldset {
   transform: translate(-50%, -5%);
   text-align: center
 }
+.register-fieldset {
+  font-size: 24px;
+  width: 350px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -5%);
+  text-align: center
+}
 
 legend {
   display: block;

@@ -19,8 +19,9 @@ const Register = () => {
     return (
         <section id="register-page" className="register">
             <form id="register-form" action="" method="POST" onSubmit={registerSubmintHandler}>
-                <fieldset>
-                    <legend>Register Form</legend>
+            <div className="row">
+                <fieldset className="register-fieldset">
+                    <legend>Register</legend>
                     <p className="field">
                         <label htmlFor="email">Email</label>
                         <span className="input">
@@ -41,6 +42,7 @@ const Register = () => {
                     </p>
                     <input className="button submit" type="submit" value="Register" />
                 </fieldset>
+                </div>
             </form>
         </section>
     )
