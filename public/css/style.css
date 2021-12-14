@@ -143,7 +143,7 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    transform: translate(-4%,2%);
+    transform: translate(-4%, 2%);
 }
 
 .text-capitalize {
@@ -232,7 +232,6 @@ p.intro {
 }
 
 .legend {
-    margin-bottom: 50px;
     display: block;
     width: 100%;
     padding: 0;
@@ -244,7 +243,7 @@ p.intro {
     border-bottom: 1px solid #e5e5e5;
 }
 
-.field + .field {
+.field+.field {
     margin-top: 10px;
 }
 
@@ -281,15 +280,70 @@ h6,
     background-color: #4CAF50;
     border-radius: 15px;
     margin-top: 20px;
-  }
-  
-  .btn:hover {background-color: #42c20b}
-  
-  .btn:active {
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #42c20b
+}
+
+.btn:active {
     background-color: #3e8e41;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
-  }
+}
+
+.button {
+    font-size: 14px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+
+.button:focus,
+.button:active {
+    outline: none;
+    color: #ffffff;
+}
+
+.button-custom {
+    border-radius: 3px;
+    padding: 0.8em 1.8em;
+    color: #fff;
+    font-weight: 700;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+    text-transform: uppercase;
+}
+
+.button-custom:hover,
+.button-custom:focus {
+    color: #fff;
+}
+
+.button-custom-outline {
+    border-radius: 3px;
+    padding: 0.8em 1.8em;
+    color: #fff;
+    font-weight: 700;
+    -webkit-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+    text-transform: uppercase;
+    background-color: transparent;
+    border-color: #ffffff;
+}
+
+.button-custom-outline:hover,
+.button-custom-outline:focus {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.button-bar a {
+    margin-right: 10px;
+}
+
 
 /*	PRELOADER
 ------------------------------*/

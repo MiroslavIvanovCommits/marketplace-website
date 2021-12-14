@@ -38,6 +38,7 @@ const Edit = () => {
     return (
         <section id="edit-page" className="edit">
             <form id="edit-form" method="POST" onSubmit={dealEditSubmitHandler}>
+            <div className="row">
                 <fieldset>
                     <label className="legend">Edit my Deal</label>
                     <p className="field">
@@ -68,6 +69,7 @@ const Edit = () => {
                     </p>
                     <input className="button submit" type="submit" value="Save" />
                 </fieldset>
+                </div>
             </form>
         </section>
     );

@@ -1,7 +1,8 @@
 const Newsletter = () => {
-    return(
-        <section className="sub-form text-center" id="eight">
-        <div className="container">
+  return (
+    <section className="sub-form text-center" id="eight">
+      <div className="container">
+        <div className="row">
           <div className="col-md-12">
             <h3 className="title">Subscribe to our <span className="themecolor"> News letter</span></h3>
             <p className="lead">Lorem ipsum dolor sit amet ne onsectetuer adipiscing elit.Aenean commodo ligula eget dolor in tashin ty</p>
@@ -20,8 +21,9 @@ const Newsletter = () => {
             </div>
           </div>
         </div>
-      </section>
-    );
+      </div>
+    </section>
+  );
 };
 
 export default Newsletter;

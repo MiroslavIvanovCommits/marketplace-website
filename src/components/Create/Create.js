@@ -29,6 +29,7 @@ const Create = () => {
     return (
         <section id="create-page" className="create">
             <form id="create-form" onSubmit={onDealCreate} method="">
+            <div className="row">
                 <fieldset>
                     <label className="legend">Add new Deal</label>
                     <p className="field">
@@ -61,6 +62,7 @@ const Create = () => {
                     </p>
                     <input className="btn" type="submit" value="Add Deal" />
                 </fieldset>
+                </div>
             </form>
         </section>
     )
