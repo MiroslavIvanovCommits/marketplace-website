@@ -137,7 +137,6 @@ VERSION : 1.1
     slides: [
         { src: "images/bak3.jpg" },
         { src: "images/bak2.jpg" },
-        { src: "images/bak3.jpg" },
         { src: "images/bak4.jpg" }
     ],animation: 'kenburns'
 });
