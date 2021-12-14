@@ -26,8 +26,9 @@ const Login = () => {
     return (
         <section id="login-page" className="login">
             <form id="login-form" onSubmit={onLoginHandler} method="POST">
-                <fieldset>
-                    <legend>Login Form</legend>
+            <div className="row">
+                <fieldset className="login-fieldset">
+                    <legend>Login</legend>
                     <p className="field">
                         <label htmlFor="email">Email</label>
                         <span className="input">
@@ -42,6 +43,7 @@ const Login = () => {
                     </p>
                     <input className="button submit" type="submit" value="Login" />
                 </fieldset>
+                </div>
             </form>
         </section>
     )
