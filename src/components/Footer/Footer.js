@@ -11,9 +11,9 @@ const Footer = () => {
         <div className="col-md-4">
   
         <ul className="social">
-        <li><a href="https://twitter.com/" target="_blank"><i className="fa fa-twitter "></i></a></li>
         <li><a href="https://www.facebook.com/" target="_blank"><i className="fa fa-facebook"></i></a></li>
-        <li><a href="https://www.youtube.com/" target="_blank"><i className="fa fa-youtube-play"></i></a></li>
+        <li><a href="https://twitter.com/" target="_blank"><i className="fa fa-twitter "></i></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank"><i className="fa fa-instagram"></i></a></li>
         </ul>
   
         </div>
