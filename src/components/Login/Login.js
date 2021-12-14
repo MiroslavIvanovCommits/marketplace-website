@@ -27,8 +27,8 @@ const Login = () => {
         <section id="login-page" className="login">
             <form id="login-form" onSubmit={onLoginHandler} method="POST">
             <div className="row">
-                <fieldset className="login-fieldset">
-                    <legend>Login</legend>
+                <fieldset>
+                    <label className="legend">Login</label>
                     <p className="field">
                         <label htmlFor="email">Email</label>
                         <span className="input">

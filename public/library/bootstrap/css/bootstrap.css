@@ -2474,34 +2474,13 @@ fieldset {
   padding: 0;
   margin: 0;
   border: 0;
-}
-.login-fieldset {
   font-size: 24px;
   width: 350px;
   position: relative;
   left: 50%;
   transform: translate(-50%, -5%);
-  text-align: center
-}
-.register-fieldset {
-  font-size: 24px;
-  width: 350px;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, -5%);
-  text-align: center
-}
-
-legend {
-  display: block;
-  width: 100%;
-  padding: 0;
-  margin-bottom: 20px;
-  font-size: 21px;
-  line-height: inherit;
-  color: #333;
-  border: 0;
-  border-bottom: 1px solid #e5e5e5;
+  text-align: center;
+  background-color: lightgrey;
 }
 label {
   display: inline-block;

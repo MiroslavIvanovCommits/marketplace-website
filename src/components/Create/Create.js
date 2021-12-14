@@ -30,7 +30,7 @@ const Create = () => {
         <section id="create-page" className="create">
             <form id="create-form" onSubmit={onDealCreate} method="">
                 <fieldset>
-                    <legend>Add new Deal</legend>
+                    <label className="legend">Add new Deal</label>
                     <p className="field">
                         <label htmlFor="name">Name</label>
                         <span className="input">
@@ -59,7 +59,7 @@ const Create = () => {
                             </select>
                         </span>
                     </p>
-                    <input className="button submit" type="submit" value="Add Deal" />
+                    <input className="btn" type="submit" value="Add Deal" />
                 </fieldset>
             </form>
         </section>
