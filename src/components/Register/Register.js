@@ -40,7 +40,7 @@ const Register = () => {
                             <input type="password" name="confirm-pass" id="repeat-pass" placeholder="Repeat Password" />
                         </span>
                     </p>
-                    <input className="button submit" type="submit" value="Register" />
+                    <input className="btn" type="submit" value="Register" />
                 </fieldset>
                 </div>
             </form>

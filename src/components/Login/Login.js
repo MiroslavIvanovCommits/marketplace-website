@@ -41,7 +41,7 @@ const Login = () => {
                             <input type="password" name="password" id="password" placeholder="Password" />
                         </span>
                     </p>
-                    <input className="button submit" type="submit" value="Login" />
+                    <input className="btn" type="submit" value="Login" />
                 </fieldset>
                 </div>
             </form>

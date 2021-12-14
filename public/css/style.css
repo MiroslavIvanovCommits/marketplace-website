@@ -231,6 +231,10 @@ p.intro {
     -webkit-overflow-scrolling: touch;
 }
 
+.field + .field {
+    margin-top: 10px;
+}
+
 /*	TYPOGRAPHY
 ------------------------------*/
 h1,
@@ -252,55 +256,21 @@ h6,
 /*	BUTTON
 ------------------------------*/
 .btn {
-    font-size: 14px;
-    font-family: 'Source Sans Pro', sans-serif;
-    text-transform: uppercase;
-    border-radius: 0;
-}
-
-.btn:focus,
-.btn:active {
-    outline: none;
-    color: #ffffff;
-}
-
-.btn-custom {
-    border-radius: 3px;
-    padding: 0.8em 1.8em;
-    color: #fff;
-    font-weight: 700;
-    -webkit-transition: all .5s ease-out;
-    -moz-transition: all .5s ease-out;
-    transition: all .5s ease-out;
-    text-transform: uppercase;
-}
-
-.btn-custom:hover,
-.btn-custom:focus {
-    color: #fff;
-}
-
-.btn-custom-outline {
-    border-radius: 3px;
-    padding: 0.8em 1.8em;
-    color: #fff;
-    font-weight: 700;
-    -webkit-transition: all .5s ease-out;
-    transition: all .5s ease-out;
-    text-transform: uppercase;
-    background-color: transparent;
-    border-color: #ffffff;
-}
-
-.btn-custom-outline:hover,
-.btn-custom-outline:focus {
-    color: #ffffff;
-    background-color: rgba(255, 255, 255, .5);
-}
-
-.btn-bar a {
-    margin-right: 10px;
-}
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    border-radius: 15px;
+    margin-top: 20px;
+  }
+  
+  .btn:hover {background-color: #42c20b}
+  
+  .btn:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
 
 /*	PRELOADER
 ------------------------------*/
