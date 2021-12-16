@@ -1,6 +1,8 @@
+import "./Footer.css";
+
 const Footer = () => {
     return(
-        <footer className="site-footer section-spacing text-center " id="eight">
+        <footer className="site-footer section-spacing text-center " id="">
 
         <div className="container">
         <div className="col-md-4">

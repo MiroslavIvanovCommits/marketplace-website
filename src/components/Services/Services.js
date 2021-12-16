@@ -1,3 +1,5 @@
+import "./Services.css";
+
 const Services = () => {
     return(
         <section className="services white-background black" id="seven">

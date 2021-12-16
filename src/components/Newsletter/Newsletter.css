@@ -1,0 +1,75 @@
+.sub-form {
+    background: #222;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #8A8A8A;
+}
+
+.form-control:-moz-placeholder {
+    color: #8A8A8A;
+}
+
+.form-control::-moz-placeholder {
+    color: #8A8A8A;
+}
+
+.form-control:-ms-input-placeholder {
+    color: #8A8A8A;
+}
+
+.form-control {
+    background-color: #222;
+    color: #4c4c4c;
+    box-shadow: none;
+    height: 60px;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 0 1.5em;
+}
+
+#mc-form {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.form-control:focus {
+    border-color: #fa5454;
+    outline: 0;
+    box-shadow: none;
+}
+
+.center-block {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sub-form .btn {
+    padding: 1em;
+}
+
+#mc-form .btn-default {
+    height: 60px;
+}
+
+#mc-notification {
+    margin: 0.75em 0 0;
+    font-weight: 400;
+    color: #8A8A8A;
+    font-size: 17px;
+}
+
+.error {
+    color: #FF4C4C !important;
+}
+
+.valid {
+    color: #4CAF50 !important;
+}
+
+.error i,
+.valid i {
+    padding-right: .5em;
+}

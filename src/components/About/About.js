@@ -1,6 +1,8 @@
+import "./About.css";
+
 const About = () => {
     return(
-        <section className="aboutus white-background black" id="one">
+        <section className="white-background black" id="one">
         <div className="container">
           <div className="row">
             <div className="col-md-12 text-center black">

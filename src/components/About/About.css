@@ -1,0 +1,23 @@
+.about-box {
+    overflow: hidden;
+    clear: both;
+    margin-bottom: 30px;
+}
+
+.about-box i {
+    font-size: 36px;
+}
+
+.about-box .about-line {
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+
+.about-box h4 {
+    padding-top: 10px;
+}
+
+.about-box p {
+    font-size: 0.93em;
+    padding-top: 10px;
+}

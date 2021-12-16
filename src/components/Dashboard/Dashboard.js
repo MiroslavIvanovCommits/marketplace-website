@@ -1,3 +1,5 @@
+import "./Dashboard.css";
+
 const Dashboard = () => {
     return(
         <section className="main-heading" id="home">

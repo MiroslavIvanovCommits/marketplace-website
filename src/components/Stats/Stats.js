@@ -1,3 +1,5 @@
+import "./Stats.css";
+
 const Stats = () => {
     return(
         <section className="our-stats" id="five">

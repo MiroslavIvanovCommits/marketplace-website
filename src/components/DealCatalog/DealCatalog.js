@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import * as dealService from "../../services/dealService.js";
 import DealCard from "./DealCard.js";
+import "./DealCatalog.css";
 
 const DealCatalog = () => {
     const [deals, setDeals] = useState([]);

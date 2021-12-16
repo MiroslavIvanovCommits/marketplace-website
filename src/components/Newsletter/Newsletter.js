@@ -1,3 +1,5 @@
+import "./Newsletter.css";
+
 const Newsletter = () => {
   return (
     <section className="sub-form text-center" id="eight">

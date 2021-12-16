@@ -17,6 +17,7 @@ import DealCatalog from "./components/DealCatalog/DealCatalog.js";
 import Details from "./components/Details/Details.js";
 import Edit from "./components/Edit/Edit.js";
 import { UserRouteGuard, GuestRouteGuard } from "./components/Common/RouteGuard.js";
+import "./App.css";
 
 
 function App() {
