@@ -135,9 +135,9 @@ VERSION : 1.1
       $("section.main-heading").vegas({
 	delay: 3000,
     slides: [
-        { src: "images/bak3.jpg" },
-        { src: "images/bak2.jpg" },
-        { src: "images/bak4.jpg" }
+        { src: "images/shopping-woman.jpg" },
+        { src: "images/working-on-laptop.jpg" },
+        { src: "images/jeans.jpg" }
     ],animation: 'kenburns'
 });
   };
