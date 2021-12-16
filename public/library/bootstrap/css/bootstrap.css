@@ -124,6 +124,7 @@ button {
 button,
 select {
   text-transform: none;
+  color: black;
 }
 button,
 html input[type="button"],
@@ -177,6 +178,7 @@ legend {
 }
 textarea {
   overflow: auto;
+  color: black;
 }
 optgroup {
   font-weight: bold;
