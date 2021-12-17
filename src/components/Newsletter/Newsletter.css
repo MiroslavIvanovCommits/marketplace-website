@@ -30,8 +30,8 @@
 
 #mc-form {
     margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: -150px;
+    margin-right: 80px;
 
 }
 
@@ -48,6 +48,7 @@
 
 .sub-form .btn {
     padding: 1em;
+    margin-top: 0px;
 }
 
 #mc-form .btn-default {
