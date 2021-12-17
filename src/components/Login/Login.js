@@ -1,6 +1,7 @@
 import * as authService from "../../services/authService.js";
 import { useNavigate } from "react-router-dom";
 import { useAuthContext } from "../../contexts/AuthContext.js";
+import "./Login.css";
 
 const Login = () => {
     const { login } = useAuthContext();
@@ -13,36 +14,39 @@ const Login = () => {
         let password = formData.get("password");
 
         authService.login(email, password)
-        .then((authData) => {
-            login(authData);
-            
-            navigate("/");
-        })
-        .catch(err => {
-            console.log(err);
-        });
+            .then((authData) => {
+                login(authData);
+
+                navigate("/");
+            })
+            .catch(err => {
+                console.log(err);
+            });
 
     };
     return (
         <section id="login-page" className="login">
             <form id="login-form" onSubmit={onLoginHandler} method="POST">
-            <div className="row">
-                <fieldset>
-                    <label className="legend">Login</label>
-                    <p className="field">
-                        <label htmlFor="email">Email</label>
-                        <span className="input">
-                            <input type="text" name="email" id="email" placeholder="Email" />
-                        </span>
-                    </p>
-                    <p className="field">
-                        <label htmlFor="password">Password</label>
-                        <span className="input">
-                            <input type="password" name="password" id="password" placeholder="Password" />
-                        </span>
-                    </p>
-                    <input className="btn" type="submit" value="Login" />
-                </fieldset>
+                <div className="row">
+                    <fieldset id="login-fieldset">
+                        <label className="legend">Login</label>
+                        <div class="login-icon">
+                            <i class="fa fa-user-circle"></i>
+                        </div>
+                        <p className="field">
+                            <label htmlFor="email">Email</label>
+                            <span className="input">
+                                <input type="text" name="email" id="login-input" placeholder="Email" />
+                            </span>
+                        </p>
+                        <p className="field">
+                            <label htmlFor="password">Password</label>
+                            <span className="input">
+                                <input type="password" name="password" id="login-input" placeholder="Password" />
+                            </span>
+                        </p>
+                        <input className="button-login" type="submit" value="Login" />
+                    </fieldset>
                 </div>
             </form>
         </section>

@@ -1,0 +1,35 @@
+#register-fieldset {
+    font-size: 20px;
+}
+
+#register-input {
+    width: 100%;
+    padding: 10px 8px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.register-icon {
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    color: #4286f4;
+    margin-bottom: 30px;
+}
+
+.button-register {
+    background-color: #56be4c;
+    color: white;
+    padding: 10px 0;
+    margin: 14px 0;
+    border: none;
+    cursor: grab;
+    width: 48%;
+    border-radius: 15px;
+}
+
+.button-register:hover {
+    opacity: 0.8;
+}
