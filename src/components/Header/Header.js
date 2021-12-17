@@ -39,7 +39,6 @@ const Header = () => {
             <li><Link to="/catalog" className="button">Catalog</Link></li>
             <li><Link to="/stats" className="button">Status</Link></li>
             <li><Link to="/services" className="button">Services</Link></li>
-            <li><Link to="/newsletter" className="button">Newsletter</Link></li>
 
             {user.email
               ? userNavigation
