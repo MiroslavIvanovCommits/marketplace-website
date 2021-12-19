@@ -5,7 +5,7 @@ const DealCard = ({deal}) => {
         <div className="col-sm-4 port-item margin-bottom">
         <Link className="button" to={`/details/${deal._id}`}>
           <div className="item-img-wrap">
-            <img src={deal.imageUrl} className="img-responsive" alt="Unavailable picture" />
+            <img src={deal.imageUrl} className="img-responsive" alt="missing image" />
           </div>
         </Link>
         <div className="work-desc">
