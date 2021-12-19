@@ -56,7 +56,7 @@ const Create = () => {
                     </p>
                     <p className="field">
                         <label htmlFor="type">Type</label>
-                        <span className="input">
+                        <span className="create-input">
                             <select id="type" name="type">
                                 <option value="clothing">Clothing</option>
                                 <option value="shoes">Shoes</option>

@@ -1,7 +1,7 @@
-import { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import * as dealService from '../../services/dealService.js';
 import useDealState from '../../hooks/useDealState';
+import "./Edit.css";
 
 const types = [
     { value: 'clothing', text: 'Clothing' },
@@ -11,7 +11,6 @@ const types = [
 
 const Edit = () => {
     const { dealId } = useParams();
-    const [errors, setErrors] = useState({ name: false });
     const [deal, setDeal] = useDealState(dealId);
     const navigate = useNavigate();
 
@@ -24,50 +23,42 @@ const Edit = () => {
             .then(navigate("/catalog"));
     };
 
-    const nameChangeHandler = (e) => {
-        let currentName = e.target.value;
-        // if (currentName.length < 3) {
-        //     setErrors(state => ({...state, name: 'Your name sould be at least 3 characters!'}))
-        // } else if (currentName.length > 10) {
-        //     setErrors(state => ({...state, name: 'Your name sould be max 10 characters!'}))
-        // } else {
-        //     setErrors(state => ({...state, name: false}))
-        // }
-    };
-
     return (
         <section id="edit-page" className="edit">
             <form id="edit-form" method="POST" onSubmit={dealEditSubmitHandler}>
             <div className="row">
-                <fieldset>
+                <fieldset id="edit-fieldset">
                     <label className="legend">Edit my Deal</label>
+                    <div className="create-icon">
+                            <i className="fa fa-pencil"></i>
+                        </div>
                     <p className="field">
                         <label htmlFor="name">Name</label>
-                        <span className="input" style={{ borderColor: errors.name ? 'red' : 'inherit' }}>
-                            <input type="text" name="name" id="name" defaultValue={deal.name} onChange={nameChangeHandler} />
+                        <span className="input">
+                            <input type="text" name="name" className="create-input" defaultValue={deal.name} />
                         </span>
                     </p>
                     <p className="field">
                         <label htmlFor="description">Description</label>
-                        <span className="input">
-                            <textarea name="description" id="description" defaultValue={deal.description} />
+                        <span className="edit-input">
+                            <textarea name="edit-description" className="create-input create-description" defaultValue={deal.description} />
                         </span>
                     </p>
                     <p className="field">
                         <label htmlFor="image">Image</label>
-                        <span className="input">
-                            <input type="text" name="imageUrl" id="image" defaultValue={deal.imageUrl} />
+                        <span className="edit-input">
+                            <input type="text" name="imageUrl" className="create-input" defaultValue={deal.imageUrl} />
                         </span>
                     </p>
                     <p className="field">
                         <label htmlFor="type">Type</label>
-                        <span className="input">
-                            <select id="type" name="type" value={deal.type} onChange={(e) => setDeal(s => ({ ...s, type: e.target.value }))}>
+                        <span className="edit-input">
+                            <select name="type" className="create-input" value={deal.type} onChange={(e) => setDeal(s => ({ ...s, type: e.target.value }))}>
                                 {types.map(x => <option key={x.value} value={x.value}>{x.text}</option>)}
                             </select>
                         </span>
                     </p>
-                    <input className="button submit" type="submit" value="Save" />
+                    <input className="btn" type="submit" value="Save" />
                 </fieldset>
                 </div>
             </form>
