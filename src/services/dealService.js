@@ -29,11 +29,12 @@ export const update = (dealId, dealData) => request.put(`${baseUrl}/deals/${deal
 
 export const getOne = (dealId, signal) => {
     return fetch(`${baseUrl}/deals/${dealId}`, { signal })
-        .then(res => res.json())
+        .then(res => res.json());
 };
 
 export const destroy = (dealId, token) => {
     return fetch(`${baseUrl}/deals/${dealId}`, {
+        
         method: 'DELETE',
         headers: {
             'X-Authorization': token
