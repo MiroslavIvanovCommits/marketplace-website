@@ -1,0 +1,63 @@
+#details-page {
+    padding: 10px;
+    margin-top: 100px;
+}
+
+.button-details {
+    display: inline-block;
+    padding: 6px 16px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    border-radius: 15px;
+    margin-top: 20px;
+    font-weight: bold;
+    margin: 4px;
+}
+
+.button-details:hover {
+    background-color: #42c20b
+}
+
+.button-details:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.button-like {
+    display: inline-block;
+    padding: 6px 16px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #ec117f;
+    border-radius: 15px;
+    margin-top: 20px;
+    font-weight: bold;
+    margin: 4px;
+}
+
+.button-like:hover {
+    background-color: #c20b67
+}
+
+.button-like:active {
+    background-color: #e4194c;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.deal-information {
+    text-align: center;
+}
+
+.actions {
+    margin: auto;
+    width: 15%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.deal-description {
+    text-align: center;
+    margin-top: 30px;
+}

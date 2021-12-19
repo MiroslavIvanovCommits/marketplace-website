@@ -5,6 +5,7 @@ import * as dealService from "../../services/dealService.js";
 import * as likeService from '../../services/likeService.js';
 import { useAuthContext } from '../../contexts/AuthContext';
 import useDealState from '../../hooks/useDealState.js';
+import "./Details.css";
 
 const Details = () => {
     const navigate = useNavigate();
@@ -29,8 +30,8 @@ const Details = () => {
 
     const ownerButtons = (
         <>
-            <Link className="button" to={`/edit/${deal._id}`}>Edit</Link>
-            <a className="button" href="#" onClick={deleteHandler}>Delete</a>
+            <Link className="button-details" to={`/edit/${deal._id}`}>Edit</Link>
+            <a className="button-details" href="#" onClick={deleteHandler}>Delete</a>
         </>
     );
 
@@ -49,7 +50,7 @@ const Details = () => {
             });
     };
 
-    const userButtons = <a className="button" type="button" onClick={likeButtonClick} disabled={deal.likes?.includes(user._id)}>
+    const userButtons = <a className="button-like" type="button" onClick={likeButtonClick} disabled={deal.likes?.includes(user._id)}>
         {deal.likes?.includes(user._id)
             ? "Liked"
             : "Like"}
