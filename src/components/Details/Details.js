@@ -24,7 +24,7 @@ const Details = () => {
         e.preventDefault();
         dealService.destroy(dealId, user.accessToken)
             .then(() => {
-                navigate("/");
+                navigate("/catalog");
             });
     };
 

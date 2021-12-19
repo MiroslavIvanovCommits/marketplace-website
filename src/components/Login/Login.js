@@ -30,8 +30,8 @@ const Login = () => {
                 <div className="row">
                     <fieldset id="login-fieldset">
                         <label className="legend">Login</label>
-                        <div class="login-icon">
-                            <i class="fa fa-user-circle"></i>
+                        <div className="login-icon">
+                            <i className="fa fa-user-circle"></i>
                         </div>
                         <p className="field">
                             <label htmlFor="email">Email</label>

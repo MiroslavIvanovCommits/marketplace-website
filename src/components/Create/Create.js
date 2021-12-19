@@ -2,6 +2,7 @@ import * as dealService from "../../services/dealService.js";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../contexts/AuthContext.js";
+import "./Create.css";
 
 const Create = () => {
     const { user } = useContext(AuthContext);
@@ -30,24 +31,27 @@ const Create = () => {
         <section id="create-page" className="create">
             <form id="create-form" onSubmit={onDealCreate} method="">
             <div className="row">
-                <fieldset>
+                <fieldset id="create-fieldset">
                     <label className="legend">Add new Deal</label>
+                    <div className="create-icon">
+                            <i className="fa fa-pencil-square-o"></i>
+                        </div>
                     <p className="field">
                         <label htmlFor="name">Name</label>
                         <span className="input">
-                            <input type="text" name="name" id="name" placeholder="Name" />
+                            <input type="text" name="name" className="create-input" placeholder="Name" />
                         </span>
                     </p>
                     <p className="field">
                         <label htmlFor="description">Description</label>
                         <span className="input">
-                            <textarea name="description" id="description" placeholder="Description"></textarea>
+                            <textarea name="description" className="create-input create-description" placeholder="Description"></textarea>
                         </span>
                     </p>
                     <p className="field">
                         <label htmlFor="image">Image</label>
                         <span className="input">
-                            <input type="text" name="imageUrl" id="image" placeholder="Image" />
+                            <input type="text" name="imageUrl" className="create-input" placeholder="Image" />
                         </span>
                     </p>
                     <p className="field">

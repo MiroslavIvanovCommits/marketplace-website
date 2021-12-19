@@ -1,0 +1,27 @@
+#create-fieldset {
+    font-size: 20px;
+}
+
+.create-description {
+    margin: 8px 0px;
+    width: 351px;
+    height: 115px;
+}
+
+.create-input {
+    width: 100%;
+    padding: 10px 8px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.create-icon {
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    color: #51f442;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
