@@ -36,13 +36,13 @@ const Login = () => {
                         <p className="field">
                             <label htmlFor="email">Email</label>
                             <span className="input">
-                                <input type="text" name="email" id="login-input" placeholder="Email" />
+                                <input type="text" name="email" className="login-input" placeholder="Email" />
                             </span>
                         </p>
                         <p className="field">
                             <label htmlFor="password">Password</label>
                             <span className="input">
-                                <input type="password" name="password" id="login-input" placeholder="Password" />
+                                <input type="password" name="password" className="login-input" placeholder="Password" />
                             </span>
                         </p>
                         <input className="button-login" type="submit" value="Login" />
