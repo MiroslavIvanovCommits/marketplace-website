@@ -76,7 +76,7 @@ const Details = () => {
             </div>
             <div className="deal-description">
                 <h3>Description:</h3>
-                <p>{deal.description}</p>
+                <pre>{deal.description}</pre>
             </div>
         </section>
     )

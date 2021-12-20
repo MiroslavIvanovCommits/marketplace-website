@@ -65,6 +65,7 @@ pre,
 form,
 fieldset,
 p,
+pre,
 blockquote,
 hr,
 th,
@@ -110,7 +111,7 @@ h5 {
     line-height: 20px;
 }
 
-p {
+p, pre {
     font-family: 'Open Sans', sans-serif;
     font-size: 0.93em;
 }
@@ -137,7 +138,7 @@ ul {
     text-transform: uppercase;
 }
 
-p.intro {
+p.intro, pre.intro {
     font-size: 0.9em;
     margin: 14px 0;
     line-height: 24px;
