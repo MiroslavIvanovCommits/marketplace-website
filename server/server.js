@@ -1332,16 +1332,98 @@
     	}
     };
     var seedData = {
-        deals: {
-            '25449aed-2a00-469a-9cca-f12952c20b83': {
-                '_ownerId': '35c62d76-8152-4626-8712-eeb96381bea8',
-                'name': 'T-Shirt',
-                'description': 'Stupid garment for poor people.',
-                'imageUrl': 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.bewakoof.com%2Foriginal%2Flogo-batman-glow-in-dark-half-sleeve-t-shirt-bml--men-s-printed-t-shirts-232960-1587185206.gif&f=1&nofb=1',
-                'type': 'clothing',
-                '_createdOn': 1617797078108
+        deals: [
+            {
+                "name": "J.Crew rugged merino wool cable-knit sweater in donegal",
+                "description": "A great crew neck sweater from J.Crew in warm donegal.\r\nPros: \r\n- Lighter color, perfect addition for winter as most people only wear dark in winter months\r\n- Now discounted from 140$ to 84$\r\nCons:\r\n- Contains nylon\r\n- Reviews are not so positive\r\nLink:\r\nhttps://www.jcrew.com/us/p/mens/categories/clothing/sweaters/pullover/rugged-merino-wool-cable-knit-sweater-in-donegal/BA309?display=sale&fit=Classic&isFromSale=true&color_name=ivory-donegal&colorProductCode=BA309",
+                "imageUrl": "https://www.jcrew.com/s7-img-facade/BA309_SU3174?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
+                "type": "clothing",
+                "_createdOn": 1640000511706,
+                "_updatedOn": 1640000893699,
+                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+                "_id": "a3bbb44b-76ea-4929-aeff-a82074b3da79"
+            },
+            {
+                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+                "name": "J.Crew Boiled merino wool sweater-blazer",
+                "description": "Cool sport coat from wool. Interesting addition for your wardrobe in the cold months.\r\nPros:\r\n-  Discounted \r\n- Can be worn more casually instead of jacket\r\n- Made from merino wool\r\nCons:\r\n- You can look a bit dated with the color combination\r\nLink:\r\nhttps://www.jcrew.com/us/m/mens/categories/clothing/blazers/sweater-blazers/boiled-merino-wool-sweater-blazer/MP925?display=sale&fit=Classic&isFromSale=true&color_name=navy&colorProductCode=BA279?display=sale&fit=Classic&isFromSale=true&color_name=navy&colorProductCode=BA279",
+                "imageUrl": "https://www.jcrew.com/s7-img-facade/BC490_SU7947?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
+                "type": "clothing",
+                "likes": [],
+                "_createdOn": 1640001884511,
+                "_id": "2f6614b9-d67d-45ba-a9a7-61e3ebfacf74"
+            },
+            {
+                "name": "Meermin cap-toed Oxford- BURGUNDY CALF",
+                "description": "Amazing offer from one of the best value-oriented shoe brands- Meermin. It's not discounted, but it's a great deal nonetheless.\r\nPros:\r\n-Solid construction\r\n- Goodyear Welted\r\n- Burgundy color, which is more versatile than brown and black\r\nLink:\r\nhttps://meermin.com/collections/mens-classic-collection/products/101198-burgundy-calf-e",
+                "imageUrl": "https://i.imgur.com/yMu9yTF_d.webp?maxwidth=760&fidelity=grand",
+                "type": "shoes",
+                "_createdOn": 1640002201623,
+                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+                "_updatedOn": 1640002437750,
+                "_id": "d0720f2a-d155-40ff-b850-9d695d3968a2"
+            },
+            {
+                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+                "name": "Charles Tyrwhitt Spread Collar Shirt - Blue",
+                "description": "An interesting offer from value-oriented company I discovered recently. They are a bit price at MSRP, but this one is discounted heavily.\r\nLink:\r\nhttps://www.charlestyrwhitt.com/us/spread-collar-non-iron-cotton-stretch-check-shirt---blue/FON2070BLU.html?cgid=clr_shirts-formal-shirts&pf=browse",
+                "imageUrl": "https://www.charlestyrwhitt.com/dw/image/v2/AAWJ_PRD/on/demandware.static/-/Sites-ctshirts-master/default/dw80cfaf32/hi-res/FON2070BLU_DETAIL_COLLAR.jpg?sw=430&sh=540",
+                "type": "clothing",
+                "likes": [],
+                "_createdOn": 1640002424815,
+                "_id": "ec90a58a-de0d-45e9-8286-50ab6d968356"
+            },
+            {
+                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+                "name": "Meermin Duffle bag in Tan color",
+                "description": "Great value high-end bag from Meermin. \r\nMade using the unique shrunken grain calf leather Togo, exclusively sourced from the renowned Tannerie d'Annonay. Togo is a truly luxurious calf leather specifically tanned to produce high quality handbags, because of it heavy thickness while being a quite lightweight. This leather is extremely soft & supple and very hard wearing at the same time.\r\nLink:\r\nhttps://meermin.com/products/309116-tan-togo",
+                "imageUrl": "https://cdn.shopify.com/s/files/1/0312/7659/7384/products/R2_3091166315_1_1440x.jpg?v=1635475568",
+                "type": "accessories",
+                "likes": [],
+                "_createdOn": 1640002697645,
+                "_id": "8abecc20-4f98-408f-83c1-387b110d0ac8"
+            },
+            {
+                "_ownerId": "847ec027-f659-4086-8032-5173e2f9c93a",
+                "name": "Levi's 511™ SLIM FIT TWILL MEN'S PANTS",
+                "description": "Guys, I found this amazing Khaki chinos/jeans. \r\nThe price is now just 30$ instead of 70$ at MSRP!\r\nMade almost exclusively from cotton, produced with sustainability in mind.\r\nLink for the deal:\r\nhttps://www.levi.com/US/en_US/apparel/clothing/bottoms/511-slim-fit-twill-mens-pants/p/045110925",
+                "imageUrl": "https://lsco.scene7.com/is/image/lsco/levis/clothing/045110925-alt1-pdp.jpg?fmt=jpeg&qlt=70,1&op_sharpen=0&resMode=sharp2&op_usm=0.8,1,10,0&fit=crop,0&wid=900&hei=1200",
+                "type": "clothing",
+                "likes": [],
+                "_createdOn": 1640002932890,
+                "_id": "74569d6d-f1f4-4a4c-9748-da898bffca2a"
+            },
+            {
+                "_ownerId": "847ec027-f659-4086-8032-5173e2f9c93a",
+                "name": "Levi's TRUCKER JACKET",
+                "description": "Classic style denim jacket from Levi's.\r\nProduced with high sustainability methods, reducing the use of water.\r\nLink:\r\nhttps://www.levi.com/US/en_US/apparel/clothing/tops/trucker-jacket/p/723340352",
+                "imageUrl": "https://lsco.scene7.com/is/image/lsco/723340352-dynamic1-pdp?fmt=jpeg&qlt=70,1&op_sharpen=0&resMode=sharp2&op_usm=0.8,1,10,0&fit=crop,0&wid=900&hei=1200",
+                "type": "clothing",
+                "likes": [],
+                "_createdOn": 1640003073247,
+                "_id": "504c954e-398e-4f1b-a1e5-1d3c3fb9e7c3"
+            },
+            {
+                "_ownerId": "847ec027-f659-4086-8032-5173e2f9c93a",
+                "name": "Levi's 510™ SKINNY FIT TENCEL MEN'S JEANS",
+                "description": "This Levi's jeans are a sharp essential that serves as a building block for any look. A skinny fit perfect for thinner gentlemen — from slim to athletic, tall to short.\r\nIt unfortunately uses 68% Cotton, but it's discounted with 15$ so it's a good deal nonetheless.\r\nLink:\r\nhttps://www.levi.com/US/en_US/apparel/clothing/bottoms/510-skinny-fit-tencel-mens-jeans/p/055100938",
+                "imageUrl": "https://lsco.scene7.com/is/image/lsco/levis/clothing/055100938-front-pdp.jpg?fmt=jpeg&qlt=70,1&op_sharpen=0&resMode=sharp2&op_usm=0.8,1,10,0&fit=crop,0&wid=900&hei=1200",
+                "type": "clothing",
+                "likes": [],
+                "_createdOn": 1640003271687,
+                "_id": "c48aed06-87e8-4262-a062-6370a1433f95"
+            },
+            {
+                "_ownerId": "847ec027-f659-4086-8032-5173e2f9c93a",
+                "name": "Ralph Lauren Snowflake Estate-Rib Pullover",
+                "description": "An interesting offer for winter time from one of my favorite brands- Ralph Lauren.\r\nPros:\r\n- Great design\r\n- 100% cotton\r\n- Machine washable\r\nCons:\r\n- It's not gonna be very warm if you wear it outside\r\nLink:\r\nhttps://www.ralphlauren.eu/snowflake-estate-rib-pullover-590613.html?dwvar590613_colorname=Medieval%20Blue%20Heather&cgid=men-gifts-our-favourite-gifts&webcat=search#ab=EU_HP_Slot_1_S1_L1_SHOP&start=1&cgid=men-gifts-our-favourite-gifts",
+                "imageUrl": "https://www.rlmedia.io/is/image/PoloGSI/s7-1416685_lifestyle?$rl_df_zoom_lif$",
+                "type": "clothing",
+                "likes": [],
+                "_createdOn": 1640003618896,
+                "_id": "9ed96642-e590-427e-8d86-c90caa5e013c"
             }
-        },
+        ],
 	    likes: {},
     };
     var rules$1 = {
