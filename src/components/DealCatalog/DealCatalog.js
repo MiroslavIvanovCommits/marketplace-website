@@ -19,7 +19,7 @@ const DealCatalog = () => {
           <div className="row">
             <div className="col-md-12">
               <h3 className="title">Recent <span className="themecolor">Works</span></h3>
-              <p className="a-slog">Lorem ipsum dolor sit amet ne onsectetuer adipiscing elit.Aenean commodo ligula eget dolor in tashin ty</p>
+              <p className="a-slog">This is a catalog of all deals that our users posted. Take advantage of what they found and give it a like if you found something useful. Feel free to add what you have found as well.</p>
             </div>
           </div>
 
@@ -29,11 +29,11 @@ const DealCatalog = () => {
             ? deals.map(x => <DealCard key={x._id} deal={x} />)
             : <h3>No deals available...</h3>}
 
-          <div className="row">
+          {/* <div className="row">
             <div className="col-md-12 text-center">
               <a href="#" className="btn btn-custom theme_background_color">Load More</a>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </>
