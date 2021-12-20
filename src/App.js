@@ -44,9 +44,8 @@ function App() {
             <Route path="/edit/:dealId" element={<UserRouteGuard><Edit /></UserRouteGuard>} />
           </Routes>
 
-          <Footer />
-
         </main>
+        <Footer />
       </div>
     </AuthProvider>
   );

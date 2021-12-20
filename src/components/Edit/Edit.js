@@ -41,7 +41,7 @@ const Edit = () => {
                     <p className="field">
                         <label htmlFor="description">Description</label>
                         <span className="edit-input">
-                            <textarea name="edit-description" className="create-input create-description" defaultValue={deal.description} />
+                            <textarea name="description" className="create-input create-description" defaultValue={deal.description} />
                         </span>
                     </p>
                     <p className="field">
