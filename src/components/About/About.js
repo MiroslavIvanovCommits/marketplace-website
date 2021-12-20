@@ -7,7 +7,7 @@ const About = () => {
           <div className="row">
             <div className="col-md-12 text-center black">
               <h3 className="title">ABOUT <span className="themecolor">US</span></h3>
-              <p className="a-slog">Our mission is to connect people and help them share the best deals they've found with other people. Thus saving your time and wallet for free!</p>
+              <p className="a-slog">Our mission is to connect people and help them share the best deals they've found with other people. Тherefore saving your time and wallet for free!</p>
             </div>
           </div>
           <div className="gap">
