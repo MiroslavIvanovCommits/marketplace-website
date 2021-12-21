@@ -23,7 +23,7 @@ You can check all posts without the need of having website registration, thus gi
 
 Unregistered Visitors can access the following pages: `Home`, `About`, `Catalog`, `Stats`, `Details`, `Login`, `Register`.
 
-If the Visitor registers, he'll become User. The User can access the following pages: `Home`, `About`, `Catalog`, `Stats`, `Details`, `Create`, `Logout`, `Edit`, `Delete` and can also like other user's posts (`Edit` and `Delete` only if the User is the creator of the post and like functionality only if he is not the creator).
+If the Visitor registers, he'll become User. The User can access the following pages: `Home`, `About`, `Catalog`, `Stats`, `Details`, `Create`, `Logout`, `Edit`, `Delete` and can also like other user's posts (`Edit` and `Delete` only if the User is the creator of the post and `like` functionality only if he is not the creator).
 
 
 
