@@ -70,7 +70,9 @@ const Details = () => {
                 <div className="actions">
                     {user._id && (user._id === deal._ownerId)
                         ? ownerButtons
-                        : userButtons
+                        : (user._id)
+                            ? userButtons
+                            : null
                     }
 
                     <div className="likes">
