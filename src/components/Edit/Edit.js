@@ -38,7 +38,10 @@ const Edit = () => {
 
     const dealEditSubmitHandler = (data) => {
         dealService.update(deal._id, data)
-            .then(navigate("/catalog"));
+            .then(navigate("/catalog"))
+            .catch(err => {
+                console.log(err);
+            });
     };
 
     return (

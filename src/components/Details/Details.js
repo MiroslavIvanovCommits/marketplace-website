@@ -26,6 +26,9 @@ const Details = () => {
             dealService.destroy(dealId)
                 .then(() => {
                     navigate("/catalog");
+                })
+                .catch(err => {
+                    console.log(err);
                 });
         }
     };

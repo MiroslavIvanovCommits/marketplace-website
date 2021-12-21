@@ -41,6 +41,9 @@ const Create = () => {
         }, user.accessToken)
             .then(result => {
                 navigate("/catalog");
+            })
+            .catch(err => {
+                console.log(err);
             });
     };
     return (
