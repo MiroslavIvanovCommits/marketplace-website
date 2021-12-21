@@ -9,6 +9,9 @@ const Stats = () => {
     dealService.getAll()
       .then(result => {
         setDeals(result);
+      })
+      .catch(err => {
+        console.log(err);
       });
   }, []);
   return (

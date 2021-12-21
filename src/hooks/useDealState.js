@@ -9,6 +9,9 @@ const useDealState = (dealId) => {
         dealService.getOne(dealId)
             .then(dealResult => {
                 setDeal(dealResult);
+            })
+            .catch(err => {
+                console.log(err);
             });
     }, [dealId]);
 

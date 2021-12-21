@@ -22,13 +22,10 @@ const Details = () => {
 
     const deleteHandler = (e) => {
         e.preventDefault();
-        if (window.confirm("Press a button!")) {
-            dealService.destroy(dealId, user.accessToken)
+        if (window.confirm("Are you sure you want to delete this post?")) {
+            dealService.destroy(dealId)
                 .then(() => {
                     navigate("/catalog");
-                })
-                .catch(err => {
-                    console.log(err);
                 });
         }
     };
