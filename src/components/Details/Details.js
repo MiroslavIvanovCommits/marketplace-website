@@ -22,10 +22,15 @@ const Details = () => {
 
     const deleteHandler = (e) => {
         e.preventDefault();
-        dealService.destroy(dealId, user.accessToken)
-            .then(() => {
-                navigate("/catalog");
-            });
+        if (window.confirm("Press a button!")) {
+            dealService.destroy(dealId, user.accessToken)
+                .then(() => {
+                    navigate("/catalog");
+                })
+                .catch(err => {
+                    console.log(err);
+                });
+        }
     };
 
     const ownerButtons = (
@@ -61,7 +66,7 @@ const Details = () => {
             <div className="deal-information">
                 <h3>Name: {deal.name}</h3>
                 <p className="type">Type: {deal.type}</p>
-                <p className="img"><img src={deal.imageUrl} alt="Unavailable picture"/></p>
+                <p className="img"><img src={deal.imageUrl} alt="Unavailable picture" /></p>
                 <div className="actions">
                     {user._id && (user._id === deal._ownerId)
                         ? ownerButtons
@@ -69,7 +74,7 @@ const Details = () => {
                     }
 
                     <div className="likes">
-                        <img className="hearts" src="/images/.png" alt=""/>
+                        <img className="hearts" src="/images/.png" alt="" />
                         <span id="total-likes">Likes: {deal.likes?.length || 0}</span>
                     </div>
                 </div>
