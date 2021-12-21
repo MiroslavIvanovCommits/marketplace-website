@@ -10,6 +10,9 @@ const DealCatalog = () => {
     dealService.getAll()
       .then(result => {
         setDeals(result);
+      })
+      .catch(err => {
+        console.log(err);
       });
   }, []);
   return (
