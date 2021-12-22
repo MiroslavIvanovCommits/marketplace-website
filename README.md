@@ -78,3 +78,9 @@ All data is stored on Heroku, where SoftUni Practice Server with hard code data 
   - [Stock images from Pexels.com](https://www.pexels.com)
   - [Basic Skeleton by NIM V1.0 Free Website Template](https://www.free-css.com)
   - [Error404 by Colorlib 404 v3](https://colorlib.com/wp/free-404-error-page-templates)
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the GNU v2.0 License. See `LICENSE` for more information.
