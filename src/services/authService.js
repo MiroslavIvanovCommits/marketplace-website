@@ -1,4 +1,4 @@
-const baseUrl = "http://localhost:3030";
+const baseUrl = "https://softuni-practice-server-market.herokuapp.com";
 
 export const login = async (email, password) => {
     let res = await fetch(`${baseUrl}/users/login`, {

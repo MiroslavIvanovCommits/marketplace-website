@@ -1,6 +1,6 @@
 import * as request from './requester';
 
-const baseUrl = 'http://localhost:3030/data';
+const baseUrl = 'https://softuni-practice-server-market.herokuapp.com/data';
 
 export const like = (userId, dealId) => request.post(`${baseUrl}/likes`, { userId, dealId });
 export const getDealLikes = (dealId) => {
