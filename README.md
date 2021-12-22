@@ -28,7 +28,7 @@ Unregistered Visitors can access the following pages: `Home`, `About`, `Catalog`
 
 If the Visitor registers, he'll become User. The User can access the following pages: `Home`, `About`, `Catalog`, `Stats`, `Details`, `Create`, `Logout`, `Edit`, `Delete` and can also like other user's posts (`Edit` and `Delete` only if the User is the creator of the post and `like` functionality only if he is not the creator).
 
-Once registered, using the `Create page` takes you to a form where you can submit only after filling it with valid information. There is a verification. The deal name must be between 8 and 60 characters long, description must be between 30 and 2000 characters long, valid imageUrl must be provided and deal type selected<br/>
+Once registered, using the `Create page` takes you to a form where you can submit only after filling it with valid information. There is a verification. The deal name must be between 8 and 60 characters long, description must be between 30 and 2000 characters long, valid imageUrl must be provided and deal type selected.<br/>
 `Edit page` requires the same validations as `Create page`.<br/>
 `Delete`... well deletes :wink:
 
@@ -78,6 +78,13 @@ All data is stored on Heroku, where SoftUni Practice Server with hard code data 
   - [Stock images from Pexels.com](https://www.pexels.com)
   - [Basic Skeleton by NIM V1.0 Free Website Template](https://www.free-css.com)
   - [Error404 by Colorlib 404 v3](https://colorlib.com/wp/free-404-error-page-templates)
+
+
+<!-- ## :camera: Preview:
+
+### Home Page
+
+![Home](https://i.imgur.com/zx6WBrF.png) -->
 
 
 <!-- LICENSE -->
