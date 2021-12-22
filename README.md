@@ -81,6 +81,6 @@ All data is stored on Heroku, where SoftUni Practice Server with hard code data 
 
 
 <!-- LICENSE -->
-## License
+## :black_nib: License
 
 Distributed under the GNU v2.0 License. See `LICENSE` for more information.
