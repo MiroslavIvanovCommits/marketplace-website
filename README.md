@@ -20,42 +20,18 @@ You can check all posts without the need of having website registration, thus gi
 - `Like button` for liking another user's posts.
 - `Header` with navbar for easy navigation.
 - `Footer` with additional referances.
+- `Error404 page` for unvalid addresses.
 
 Unregistered Visitors can access the following pages: `Home`, `About`, `Catalog`, `Stats`, `Details`, `Login`, `Register`.
 
 If the Visitor registers, he'll become User. The User can access the following pages: `Home`, `About`, `Catalog`, `Stats`, `Details`, `Create`, `Logout`, `Edit`, `Delete` and can also like other user's posts (`Edit` and `Delete` only if the User is the creator of the post and `like` functionality only if he is not the creator).
 
+Once registered, using the `Create page` takes you to a form where you can submit only after filling it with valid information. There is a verification. The deal name must be between 8 and 60 characters long, description must be between 30 and 2000 characters long, valid imageUrl must be provided and deal type selected<br/>
+`Edit page` requires the same validations as `Create page`.<br/>
+`Delete`... well deletes :wink:
 
+The images and pdf files are uploaded to the deployed SoftUni practice server.
 
+The site takes you to the `Error404 page` if you try to access a non-existent url.
 
-
-
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
+The `Footer` has links to different social media pages, which, when clicked, will open in a new tab.
