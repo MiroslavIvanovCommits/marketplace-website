@@ -3,7 +3,6 @@ import { AuthProvider } from "./contexts/AuthContext.js";
 
 import Header from "./components/Header/Header.js";
 import Footer from "./components/Footer/Footer.js";
-import Services from "./components/Services/Services.js";
 import Stats from "./components/Stats/Stats.js";
 import About from "./components/About/About.js";
 import Dashboard from "./components/Dashboard/Dashboard.js";
@@ -34,7 +33,6 @@ function App() {
             <Route path="/" element={<Dashboard />} />
             <Route path="/about" element={<About />} />
             <Route path="/stats" element={<Stats />} />
-            <Route path="/services" element={<Services />} />
             <Route path="/login" element={<GuestRouteGuard><Login /></GuestRouteGuard>} />
             <Route path="/register" element={<GuestRouteGuard><Register /></GuestRouteGuard>} />
             <Route path="/logout" element={<Logout />} />
