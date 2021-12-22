@@ -1,6 +1,6 @@
 # :shopping: Clothing deals
 
-Link to the site ➜ [Clothing Deals](https://marketplace-website-beta.vercel.app/)
+Link to the site ➜ [Clothing Deals](https://marketplace-website-beta.vercel.app)
 
 A web page where you can share the best clothing deals you have found with other people, saving them time and money for free.<br/>
 You can check all posts without the need of having website registration, thus giving you more options to protect your privacy and security online.
@@ -35,3 +35,41 @@ The images and pdf files are uploaded to the deployed SoftUni practice server.
 The site takes you to the `Error404 page` if you try to access a non-existent url.
 
 The `Footer` has links to different social media pages, which, when clicked, will open in a new tab.
+
+ 🔨 Made using:
+ --
+ 
+- IDE:
+  - [Visual Studio Code](https://code.visualstudio.com)
+- Front-End:
+  - [ReactJS](https://reactjs.org)
+- Web Server:
+  - [SoftUni Practice Server](https://github.com/softuni-practice-server/softuni-practice-server)
+- Web Hosting:
+  - [Heroku](https://softuni-practice-server-market.herokuapp.com)
+  - [Vercel](https://marketplace-website-beta.vercel.app)
+- Back-End:
+  - [Node.js](https://nodejs.org/en)
+- Markup Languages:
+  - [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
+  - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- NPM packages:
+  - [react](https://www.npmjs.com/package/react)
+  - [react-dom](https://www.npmjs.com/package/react-dom)
+  - [react-router-dom](https://www.npmjs.com/package/react-bootstrap)
+  - [react-bootstrap](https://www.npmjs.com/package/react-bootstrap)
+  - [node-uuid](https://www.npmjs.com/package/node-uuid)
+  - [react-hook-form](https://www.npmjs.com/package/react-hook-form)
+  - [react-scripts](https://www.npmjs.com/package/react-scripts)
+  - [web-vitals](https://www.npmjs.com/package/web-vitals)
+  - [yup](https://www.npmjs.com/package/yup)
+  - [hookform/resolvers](https://www.npmjs.com/package/@hookform/resolvers)
+  - [testing-library/jest-dom](https://www.npmjs.com/package/@testing-library/jest-dom)
+  - [testing-library/react](https://www.npmjs.com/package/@testing-library/react)
+  - [testing-library/user-event](https://www.npmjs.com/package/@testing-library/user-event)
+
+- Additionals:
+  - [Font Awesome](https://fontawesome.com)
+  - [Stock images from Pexels.com](https://www.pexels.com)
+  - [Basic Skeleton by NIM V1.0 Free Website Template](https://www.free-css.com)
+  - [Error404 by Colorlib 404 v3](https://colorlib.com/wp/free-404-error-page-templates)
