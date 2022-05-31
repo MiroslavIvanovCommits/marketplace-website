@@ -1,8 +1,8 @@
 # :shopping: Clothing deals
 
-NB! Also check some of my other projects:
-AEPO-website ➜ [AEPO-website](https://github.com/MiroslavIvanovCommits/AEPO-website)
-Photography-site ➜ [Photography-site](https://github.com/MiroslavIvanovCommits/Photography-site)
+NB! Also check some of my other projects:<br/>
+AEPO-website ➜ [AEPO-website](https://github.com/MiroslavIvanovCommits/AEPO-website)<br/>
+Photography-site ➜ [Photography-site](https://github.com/MiroslavIvanovCommits/Photography-site)<br/>
 
 
 Link to the site ➜ [Clothing Deals](https://marketplace-website-beta.vercel.app)
