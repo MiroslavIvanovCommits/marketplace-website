@@ -1,10 +1,5 @@
 # :shopping: Clothing deals
 
-NB! Also check some of my other projects:<br/>
-AEPO-website ➜ [AEPO-website](https://github.com/MiroslavIvanovCommits/AEPO-website)<br/>
-Photography-site ➜ [Photography-site](https://github.com/MiroslavIvanovCommits/Photography-site)<br/>
-
-
 Link to the site ➜ [Clothing Deals](https://marketplace-website-beta.vercel.app)
 
 **Attention!** This application is made for SoftUni ReactJS course and it's **not intended for proper real-life usage**.<br/>
