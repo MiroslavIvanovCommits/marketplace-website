@@ -2,8 +2,6 @@
 
 Link to the site ➜ [Clothing Deals](https://marketplace-website-beta.vercel.app)
 
-**Attention!** This application is made for SoftUni ReactJS course and it's **not intended for proper real-life usage**.<br/>
-
 A web page where you can share the best clothing deals you have found with other people, saving them time and money for free.<br/>
 You can check all posts without the need of having website registration, thus giving you more options to protect your privacy and security online.
 
